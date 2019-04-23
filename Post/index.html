@@ -9,7 +9,8 @@
     VK.init(function() { 
        // API initialization succeeded 
        // Your code here 
-       VK.api("wall.post", {"message": "Hello!", "v":"5.73"}, function (data) {
+	var mtext = "Hello"
+       VK.api("wall.post", {"message": mtext, "v":"5.73"}, function (data) {
         alert("Post ID:" + data.response.post_id);
         });
     }, function() { 
